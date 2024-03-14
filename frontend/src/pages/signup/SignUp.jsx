@@ -11,9 +11,22 @@ import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+// import { useHistory } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Copyright(props) {
+  // const history = useHistory();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const data = new FormData(event.currentTarget);
+  //   console.log({
+  //     email: data.get('email'),
+  //     password: data.get('password'),
+  //   });
+
+  //   // Navigate to the dashboard upon successful signup
+  //   history.push('/dashboard');
+  // };
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -109,7 +122,7 @@ export default function SignUp() {
                 />
               </Grid>
             </Grid>
-            <Button
+            <Button href='dashboard'
               type="submit"
               fullWidth
               variant="contained"
