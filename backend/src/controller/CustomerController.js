@@ -23,6 +23,7 @@ class CustomerController {
 
 
     updateCustomer = async(req, res) => {
+        console.log("In to the updateCustomer");
         const customerId = req.params.customerID;
         console.log('req customer ID : ', customerId);
     
@@ -49,6 +50,7 @@ class CustomerController {
     }
 
     deleteCustomer = async(req, res) => {
+        console.log("In to the deleteCustomer");
         const customerId = req.params.customerId;
         console.log("req delete customer id : ", customerId);
 
