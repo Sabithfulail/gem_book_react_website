@@ -15,6 +15,7 @@ class CustomerController {
 
     
     saveCustomer = async(req, res) => {
+        console.log("In to the saveCustomer");
         console.log("Save Customer Req : ", req.body);
         const data = await Customer.create(req.body);
         res.send("Customer Saved Successfully...!");
